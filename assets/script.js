@@ -11,17 +11,17 @@ Consigli:
 */
 
 //creo la mia array
-const listaSpesa = ['latte','uova','legumi','pasta','yogurt'];
+const listaSpesa = ["latte", "uova", "legumi", "pasta", "yogurt"];
 
 //inizializziamo le variabili
-let i=0;
+let i = 0;
 let spesa = "";
 
 //ciclo while
 while (i < listaSpesa.length) {
-
-    spesa += listaSpesa[i]
-    i++ //incremento il contatore (che va alla fine)
+  spesa += " <br>La mia lista della spesa è: " + listaSpesa[i];
+  i++; //incremento il contatore (che va alla fine)
 }
 
-document.getElementById('lista').innerHTML = spesa;
+//stampo in pagina
+document.getElementById("lista").innerHTML = spesa;
